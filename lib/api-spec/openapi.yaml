@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: menu
+    description: Public restaurant menu
 paths:
   /healthz:
     get:
@@ -24,6 +26,19 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /menu:
+    get:
+      operationId: getMenu
+      tags: [menu]
+      summary: Get the restaurant menu
+      description: Returns public menu categories and menu items with photographed board prices where legible.
+      responses:
+        "200":
+          description: Menu data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MenuResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +48,38 @@ components:
           type: string
       required:
         - status
+    MenuCategory:
+      type: string
+      enum:
+        - Seafood
+        - Dhaba favourites
+        - Barbecue
+        - Drinks
+    MenuItem:
+      type: object
+      properties:
+        name:
+          type: string
+        category:
+          $ref: "#/components/schemas/MenuCategory"
+        boardPrice:
+          type: ["string", "null"]
+      required:
+        - name
+        - category
+        - boardPrice
+    MenuResponse:
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            $ref: "#/components/schemas/MenuCategory"
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/MenuItem"
+      required:
+        - categories
+        - items
 
