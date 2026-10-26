@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="410" viewBox="0 0 492 410" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="492" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4D9CD"/><stop offset="1" stop-color="#C5B2A1"/>
+    </linearGradient>
+    <linearGradient id="shake" x1="180" y1="149" x2="309" y2="335" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EEE0"/><stop offset="1" stop-color="#B9A28D"/>
+    </linearGradient>
+  </defs>
+  <rect width="492" height="410" fill="url(#bg)"/>
+  <circle cx="89" cy="303" r="65" fill="#FFF7EA" fill-opacity=".28"/>
+  <circle cx="410" cy="95" r="59" fill="#6A4B40" fill-opacity=".09"/>
+  <ellipse cx="246" cy="344" rx="120" ry="17" fill="#4B352E" fill-opacity=".21"/>
+  <path d="M159 124h174l-17 192c-2 23-20 38-43 38h-54c-23 0-41-15-43-38l-17-192Z" fill="#FFF8EA" fill-opacity=".8" stroke="#FFFAF0" stroke-width="8"/>
+  <path d="M172 173h148l-12 141c-1 14-12 23-27 23h-70c-15 0-26-9-27-23l-12-141Z" fill="url(#shake)"/>
+  <path d="M178 184c40 9 91 9 136-1" stroke="#FFFDF7" stroke-width="8" stroke-linecap="round"/>
+  <path d="m239 101 12 84" stroke="#5A3C34" stroke-width="8" stroke-linecap="round"/>
+  <path d="M211 113c8-20 27-30 46-24 17 6 23 22 17 37" stroke="#FFF9ED" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="290" cy="113" r="25" fill="#302522"/>
+  <circle cx="290" cy="113" r="14" fill="#D3C8B7"/>
+  <circle cx="199" cy="230" r="5" fill="#3C2E28"/>
+  <circle cx="277" cy="260" r="6" fill="#3C2E28"/>
+  <circle cx="229" cy="300" r="4" fill="#3C2E28"/>
+  <circle cx="300" cy="205" r="4" fill="#3C2E28"/>
+  <text x="246" y="66" text-anchor="middle" fill="#4F3A32" font-family="Georgia,serif" font-size="17" letter-spacing="3">COOKIE SHAKE</text>
+</svg>

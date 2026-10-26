@@ -22,19 +22,20 @@ A multi-page public restaurant website for Bikers Dhaba in Pabna, Bangladesh, wi
 - `artifacts/bikers-dhaba/src/App.tsx` — Home, About, Menu, Visit & Contact routes
 - `artifacts/bikers-dhaba/src/components/site-layout.tsx` — shared brand, navigation, footer, and page metadata
 - `artifacts/bikers-dhaba/src/components/menu-browser.tsx` — menu category filtering and price notice
+- `artifacts/bikers-dhaba/src/data/menu-images.ts` — each menu item's supplied photo or labeled illustrative image
 - `artifacts/bikers-dhaba/src/data/business.ts` — address, phone, location link, listed rating, hours note, and services
 - `artifacts/api-server/src/data/menu.ts` — menu categories, item names, and photographed board prices
 - `artifacts/api-server/src/routes/menu.ts` — validated read-only menu endpoint
 - `lib/api-spec/openapi.yaml` — source contract for the API and generated client
 - `artifacts/bikers-dhaba/src/index.css` — colors, typography, and responsive styling
-- `artifacts/bikers-dhaba/public/images/` — supplied restaurant/menu photos and illustrative generated food photography
+- `artifacts/bikers-dhaba/public/images/` — supplied restaurant/menu photos, dish crops, and representative image assets
 
 ## Architecture decisions
 
 - The menu is served from a read-only API; add database storage only if the business needs persistent booking, ordering, or customer-submitted data.
 - The business details and menu entries come from the supplied listing/photos; do not invent missing hours, awards, or customer reviews.
 - Menu prices come from a photo dated August 2024, may be outdated, and must remain clearly marked as historical with a call-to-confirm note.
-- Generated food photos are illustrative, not actual restaurant servings; the UI labels them accordingly.
+- Representative food images are illustrative, not actual restaurant servings; the menu labels them accordingly.
 
 ## Product
 

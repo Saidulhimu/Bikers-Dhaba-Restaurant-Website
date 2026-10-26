@@ -58,7 +58,11 @@ export function Footer() {
           <div><h3>Find your way</h3><div className="footer-links"><a href={business.mapsUrl} target="_blank" rel="noopener noreferrer" data-testid="link-footer-directions">Directions to the dhaba <ArrowUpRight size={13} /></a><span data-testid="text-business-address">{business.address}</span><a href={`tel:${business.phoneHref}`} data-testid="link-footer-phone">{business.phone}</a></div></div>
           <div><h3>Explore</h3><div className="footer-links">{pages.slice(1).map((page) => <Link key={page.href} href={page.href} data-testid={`link-footer-${page.label.toLowerCase().replaceAll(' ', '-')}`}>{page.label}</Link>)}<span>Dine-in · Drive-through · Delivery</span></div></div>
         </div>
-        <div className="footer-bottom"><span>© {new Date().getFullYear()} Bikers Dhaba, Pabna</span><span>Food imagery on this site is illustrative; actual plating may differ.</span></div>
+        <div className="footer-bottom">
+          <span>© {new Date().getFullYear()} Bikers Dhaba, Pabna</span>
+          <span className="developer-credit">Developed by <a href="https://saidul-dev-mern.vercel.app" target="_blank" rel="noopener noreferrer" data-testid="link-developer-portfolio">Md. Saidul Islam</a></span>
+          <span>Menu imagery includes supplied guest photos and representative illustrations.</span>
+        </div>
       </div>
     </footer>
   );

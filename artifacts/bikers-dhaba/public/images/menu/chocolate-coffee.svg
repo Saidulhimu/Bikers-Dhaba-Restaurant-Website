@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="492" height="410" viewBox="0 0 492 410" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="32" y1="0" x2="465" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAD8C2"/><stop offset="1" stop-color="#B89070"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="174" y1="144" x2="312" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B4D35"/><stop offset="1" stop-color="#3B211B"/>
+    </linearGradient>
+  </defs>
+  <rect width="492" height="410" fill="url(#bg)"/>
+  <circle cx="396" cy="80" r="59" fill="#FFF5E7" fill-opacity=".28"/>
+  <circle cx="78" cy="320" r="73" fill="#6F3F2E" fill-opacity=".14"/>
+  <ellipse cx="246" cy="343" rx="126" ry="19" fill="#44281F" fill-opacity=".22"/>
+  <path d="M159 125h174l-17 190c-2 23-19 37-42 37h-56c-23 0-40-14-42-37l-17-190Z" fill="#F5E8D2" fill-opacity=".73" stroke="#FFF6E8" stroke-width="8"/>
+  <path d="M172 175h148l-12 134c-1 13-12 22-26 22h-72c-14 0-25-9-26-22l-12-134Z" fill="url(#coffee)"/>
+  <path d="M170 176c40 13 94 12 153-2" stroke="#D7B892" stroke-width="10" stroke-linecap="round"/>
+  <path d="M209 185c12-8 25-8 37 0 11 7 25 7 39 0" stroke="#F3E0C5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M230 91h43l-10 91h-23l-10-91Z" fill="#FFF6E8" fill-opacity=".85"/>
+  <path d="M242 95h17l-9 75h-1l-7-75Z" fill="#A77C58"/>
+  <path d="M227 93c8-17 29-24 44-13 10 7 12 18 7 28" stroke="#F7EEE0" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="215" cy="103" r="7" fill="#6A3929"/>
+  <circle cx="282" cy="106" r="7" fill="#6A3929"/>
+  <text x="246" y="65" text-anchor="middle" fill="#4E3025" font-family="Georgia,serif" font-size="17" letter-spacing="3">ICED COFFEE</text>
+</svg>
